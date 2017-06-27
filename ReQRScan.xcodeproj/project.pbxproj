@@ -12,10 +12,10 @@
 		642230C81F0200EF00D8BAEF /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 642230BE1F01FD8900D8BAEF /* RxCocoa.framework */; };
 		642230D01F02233600D8BAEF /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642230CF1F02233600D8BAEF /* ScanViewController.swift */; };
 		642230D41F02276500D8BAEF /* DisplayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642230D31F02276500D8BAEF /* DisplayController.swift */; };
-		642230D91F02279000D8BAEF /* CIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642230D51F02279000D8BAEF /* CIColorExtension.swift */; };
-		642230DA1F02279000D8BAEF /* CIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642230D61F02279000D8BAEF /* CIImageExtension.swift */; };
-		642230DB1F02279000D8BAEF /* QRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642230D71F02279000D8BAEF /* QRCode.swift */; };
-		642230DC1F02279000D8BAEF /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642230D81F02279000D8BAEF /* UIImageViewExtension.swift */; };
+		6447C86E1F0237F10022EAC0 /* CIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6447C86A1F0237F10022EAC0 /* CIColorExtension.swift */; };
+		6447C86F1F0237F10022EAC0 /* CIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6447C86B1F0237F10022EAC0 /* CIImageExtension.swift */; };
+		6447C8701F0237F10022EAC0 /* QRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6447C86C1F0237F10022EAC0 /* QRCode.swift */; };
+		6447C8711F0237F10022EAC0 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6447C86D1F0237F10022EAC0 /* UIImageViewExtension.swift */; };
 		64807C941F01F8C000FBED09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64807C931F01F8C000FBED09 /* AppDelegate.swift */; };
 		64807C961F01F8C000FBED09 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64807C951F01F8C000FBED09 /* Main.swift */; };
 		64807C991F01F8C100FBED09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64807C971F01F8C100FBED09 /* Main.storyboard */; };
@@ -51,10 +51,10 @@
 		642230C21F01FD8D00D8BAEF /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
 		642230CF1F02233600D8BAEF /* ScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
 		642230D31F02276500D8BAEF /* DisplayController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayController.swift; sourceTree = "<group>"; };
-		642230D51F02279000D8BAEF /* CIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CIColorExtension.swift; path = "../../../Downloads/QRCode-master/QRCode/CIColorExtension.swift"; sourceTree = "<group>"; };
-		642230D61F02279000D8BAEF /* CIImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CIImageExtension.swift; path = "../../../Downloads/QRCode-master/QRCode/CIImageExtension.swift"; sourceTree = "<group>"; };
-		642230D71F02279000D8BAEF /* QRCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QRCode.swift; path = "../../../Downloads/QRCode-master/QRCode/QRCode.swift"; sourceTree = "<group>"; };
-		642230D81F02279000D8BAEF /* UIImageViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIImageViewExtension.swift; path = "../../../Downloads/QRCode-master/QRCode/UIImageViewExtension.swift"; sourceTree = "<group>"; };
+		6447C86A1F0237F10022EAC0 /* CIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CIColorExtension.swift; sourceTree = "<group>"; };
+		6447C86B1F0237F10022EAC0 /* CIImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CIImageExtension.swift; sourceTree = "<group>"; };
+		6447C86C1F0237F10022EAC0 /* QRCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCode.swift; sourceTree = "<group>"; };
+		6447C86D1F0237F10022EAC0 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		64807C901F01F8C000FBED09 /* ReQRScan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReQRScan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64807C931F01F8C000FBED09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64807C951F01F8C000FBED09 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
@@ -124,10 +124,10 @@
 		642230D21F0226A500D8BAEF /* QRGenerator */ = {
 			isa = PBXGroup;
 			children = (
-				642230D51F02279000D8BAEF /* CIColorExtension.swift */,
-				642230D61F02279000D8BAEF /* CIImageExtension.swift */,
-				642230D71F02279000D8BAEF /* QRCode.swift */,
-				642230D81F02279000D8BAEF /* UIImageViewExtension.swift */,
+				6447C86A1F0237F10022EAC0 /* CIColorExtension.swift */,
+				6447C86B1F0237F10022EAC0 /* CIImageExtension.swift */,
+				6447C86C1F0237F10022EAC0 /* QRCode.swift */,
+				6447C86D1F0237F10022EAC0 /* UIImageViewExtension.swift */,
 			);
 			name = QRGenerator;
 			sourceTree = "<group>";
@@ -353,15 +353,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6447C86F1F0237F10022EAC0 /* CIImageExtension.swift in Sources */,
 				64807CC31F01FB9E00FBED09 /* AppState.swift in Sources */,
+				6447C86E1F0237F10022EAC0 /* CIColorExtension.swift in Sources */,
 				642230D41F02276500D8BAEF /* DisplayController.swift in Sources */,
 				64807C961F01F8C000FBED09 /* Main.swift in Sources */,
-				642230DA1F02279000D8BAEF /* CIImageExtension.swift in Sources */,
+				6447C8701F0237F10022EAC0 /* QRCode.swift in Sources */,
 				64807C941F01F8C000FBED09 /* AppDelegate.swift in Sources */,
-				642230DC1F02279000D8BAEF /* UIImageViewExtension.swift in Sources */,
-				642230DB1F02279000D8BAEF /* QRCode.swift in Sources */,
 				642230D01F02233600D8BAEF /* ScanViewController.swift in Sources */,
-				642230D91F02279000D8BAEF /* CIColorExtension.swift in Sources */,
+				6447C8711F0237F10022EAC0 /* UIImageViewExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

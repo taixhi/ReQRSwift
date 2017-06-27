@@ -7,13 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		642230BB1F01FD8500D8BAEF /* ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 642230BA1F01FD8500D8BAEF /* ReSwift.framework */; };
+		642230C11F01FD8C00D8BAEF /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 642230C01F01FD8B00D8BAEF /* RxSwift.framework */; };
+		642230C81F0200EF00D8BAEF /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 642230BE1F01FD8900D8BAEF /* RxCocoa.framework */; };
+		642230D01F02233600D8BAEF /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642230CF1F02233600D8BAEF /* ScanViewController.swift */; };
+		642230D41F02276500D8BAEF /* DisplayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642230D31F02276500D8BAEF /* DisplayController.swift */; };
+		642230D91F02279000D8BAEF /* CIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642230D51F02279000D8BAEF /* CIColorExtension.swift */; };
+		642230DA1F02279000D8BAEF /* CIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642230D61F02279000D8BAEF /* CIImageExtension.swift */; };
+		642230DB1F02279000D8BAEF /* QRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642230D71F02279000D8BAEF /* QRCode.swift */; };
+		642230DC1F02279000D8BAEF /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642230D81F02279000D8BAEF /* UIImageViewExtension.swift */; };
 		64807C941F01F8C000FBED09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64807C931F01F8C000FBED09 /* AppDelegate.swift */; };
-		64807C961F01F8C000FBED09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64807C951F01F8C000FBED09 /* ViewController.swift */; };
+		64807C961F01F8C000FBED09 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64807C951F01F8C000FBED09 /* Main.swift */; };
 		64807C991F01F8C100FBED09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64807C971F01F8C100FBED09 /* Main.storyboard */; };
 		64807C9B1F01F8C100FBED09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64807C9A1F01F8C100FBED09 /* Assets.xcassets */; };
 		64807C9E1F01F8C100FBED09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64807C9C1F01F8C100FBED09 /* LaunchScreen.storyboard */; };
 		64807CA91F01F8C100FBED09 /* ReQRScanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64807CA81F01F8C100FBED09 /* ReQRScanTests.swift */; };
 		64807CB41F01F8C100FBED09 /* ReQRScanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64807CB31F01F8C100FBED09 /* ReQRScanUITests.swift */; };
+		64807CC31F01FB9E00FBED09 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64807CC21F01FB9E00FBED09 /* AppState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +44,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		642230BA1F01FD8500D8BAEF /* ReSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReSwift.framework; path = Carthage/Build/iOS/ReSwift.framework; sourceTree = "<group>"; };
+		642230BC1F01FD8600D8BAEF /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
+		642230BE1F01FD8900D8BAEF /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		642230C01F01FD8B00D8BAEF /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		642230C21F01FD8D00D8BAEF /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
+		642230CF1F02233600D8BAEF /* ScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
+		642230D31F02276500D8BAEF /* DisplayController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayController.swift; sourceTree = "<group>"; };
+		642230D51F02279000D8BAEF /* CIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CIColorExtension.swift; path = "../../../Downloads/QRCode-master/QRCode/CIColorExtension.swift"; sourceTree = "<group>"; };
+		642230D61F02279000D8BAEF /* CIImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CIImageExtension.swift; path = "../../../Downloads/QRCode-master/QRCode/CIImageExtension.swift"; sourceTree = "<group>"; };
+		642230D71F02279000D8BAEF /* QRCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QRCode.swift; path = "../../../Downloads/QRCode-master/QRCode/QRCode.swift"; sourceTree = "<group>"; };
+		642230D81F02279000D8BAEF /* UIImageViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIImageViewExtension.swift; path = "../../../Downloads/QRCode-master/QRCode/UIImageViewExtension.swift"; sourceTree = "<group>"; };
 		64807C901F01F8C000FBED09 /* ReQRScan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReQRScan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64807C931F01F8C000FBED09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		64807C951F01F8C000FBED09 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		64807C951F01F8C000FBED09 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		64807C981F01F8C100FBED09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		64807C9A1F01F8C100FBED09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64807C9D1F01F8C100FBED09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +68,7 @@
 		64807CAF1F01F8C100FBED09 /* ReQRScanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReQRScanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		64807CB31F01F8C100FBED09 /* ReQRScanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReQRScanUITests.swift; sourceTree = "<group>"; };
 		64807CB51F01F8C100FBED09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64807CC21F01FB9E00FBED09 /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +76,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				642230C11F01FD8C00D8BAEF /* RxSwift.framework in Frameworks */,
+				642230C81F0200EF00D8BAEF /* RxCocoa.framework in Frameworks */,
+				642230BB1F01FD8500D8BAEF /* ReSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +99,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		642230B91F01FD8400D8BAEF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				642230C21F01FD8D00D8BAEF /* RxTest.framework */,
+				642230C01F01FD8B00D8BAEF /* RxSwift.framework */,
+				642230BE1F01FD8900D8BAEF /* RxCocoa.framework */,
+				642230BC1F01FD8600D8BAEF /* RxBlocking.framework */,
+				642230BA1F01FD8500D8BAEF /* ReSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		642230D11F02233B00D8BAEF /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				642230CF1F02233600D8BAEF /* ScanViewController.swift */,
+				642230D31F02276500D8BAEF /* DisplayController.swift */,
+				64807C951F01F8C000FBED09 /* Main.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		642230D21F0226A500D8BAEF /* QRGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				642230D51F02279000D8BAEF /* CIColorExtension.swift */,
+				642230D61F02279000D8BAEF /* CIImageExtension.swift */,
+				642230D71F02279000D8BAEF /* QRCode.swift */,
+				642230D81F02279000D8BAEF /* UIImageViewExtension.swift */,
+			);
+			name = QRGenerator;
+			sourceTree = "<group>";
+		};
 		64807C871F01F8C000FBED09 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +139,7 @@
 				64807CA71F01F8C100FBED09 /* ReQRScanTests */,
 				64807CB21F01F8C100FBED09 /* ReQRScanUITests */,
 				64807C911F01F8C000FBED09 /* Products */,
+				642230B91F01FD8400D8BAEF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,8 +157,10 @@
 			isa = PBXGroup;
 			children = (
 				64807C931F01F8C000FBED09 /* AppDelegate.swift */,
-				64807C951F01F8C000FBED09 /* ViewController.swift */,
+				642230D21F0226A500D8BAEF /* QRGenerator */,
+				64807CC11F01FB8D00FBED09 /* State */,
 				64807C971F01F8C100FBED09 /* Main.storyboard */,
+				642230D11F02233B00D8BAEF /* ViewController */,
 				64807C9A1F01F8C100FBED09 /* Assets.xcassets */,
 				64807C9C1F01F8C100FBED09 /* LaunchScreen.storyboard */,
 				64807C9F1F01F8C100FBED09 /* Info.plist */,
@@ -125,6 +186,14 @@
 			path = ReQRScanUITests;
 			sourceTree = "<group>";
 		};
+		64807CC11F01FB8D00FBED09 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				64807CC21F01FB9E00FBED09 /* AppState.swift */,
+			);
+			name = State;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +204,7 @@
 				64807C8C1F01F8C000FBED09 /* Sources */,
 				64807C8D1F01F8C000FBED09 /* Frameworks */,
 				64807C8E1F01F8C000FBED09 /* Resources */,
+				642230B81F01FC7600D8BAEF /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -193,7 +263,7 @@
 				TargetAttributes = {
 					64807C8F1F01F8C000FBED09 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = RKPBSNFRK4;
+						DevelopmentTeam = 375AJZ9MFR;
 						ProvisioningStyle = Automatic;
 					};
 					64807CA31F01F8C100FBED09 = {
@@ -257,13 +327,41 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		642230B81F01FC7600D8BAEF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/ReSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxBlocking.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxTest.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		64807C8C1F01F8C000FBED09 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64807C961F01F8C000FBED09 /* ViewController.swift in Sources */,
+				64807CC31F01FB9E00FBED09 /* AppState.swift in Sources */,
+				642230D41F02276500D8BAEF /* DisplayController.swift in Sources */,
+				64807C961F01F8C000FBED09 /* Main.swift in Sources */,
+				642230DA1F02279000D8BAEF /* CIImageExtension.swift in Sources */,
 				64807C941F01F8C000FBED09 /* AppDelegate.swift in Sources */,
+				642230DC1F02279000D8BAEF /* UIImageViewExtension.swift in Sources */,
+				642230DB1F02279000D8BAEF /* QRCode.swift in Sources */,
+				642230D01F02233600D8BAEF /* ScanViewController.swift in Sources */,
+				642230D91F02279000D8BAEF /* CIColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +441,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -394,6 +493,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -417,8 +517,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = RKPBSNFRK4;
+				DEVELOPMENT_TEAM = 375AJZ9MFR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ReQRScan/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.teamlab.ReQRScan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -430,8 +535,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = RKPBSNFRK4;
+				DEVELOPMENT_TEAM = 375AJZ9MFR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ReQRScan/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.teamlab.ReQRScan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -516,6 +626,7 @@
 				64807CBA1F01F8C100FBED09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		64807CBB1F01F8C100FBED09 /* Build configuration list for PBXNativeTarget "ReQRScanTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +635,7 @@
 				64807CBD1F01F8C100FBED09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		64807CBE1F01F8C100FBED09 /* Build configuration list for PBXNativeTarget "ReQRScanUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +644,7 @@
 				64807CC01F01F8C100FBED09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

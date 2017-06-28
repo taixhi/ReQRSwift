@@ -25,6 +25,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jAr-sf-QO8">
                                 <rect key="frame" x="170" y="338.5" width="35" height="30"/>
                                 <state key="normal" title="Scan"/>
+                                <connections>
+                                    <segue destination="SQf-cx-gKh" kind="show" id="Sba-Vg-i5g"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yIK-Im-kYT">
                                 <rect key="frame" x="162" y="298.5" width="50" height="30"/>
@@ -47,10 +50,10 @@
             </objects>
             <point key="canvasLocation" x="105" y="368"/>
         </scene>
-        <!--View Controller-->
+        <!--Scan View Controller-->
         <scene sceneID="UPk-41-7XK">
             <objects>
-                <viewController id="SQf-cx-gKh" sceneMemberID="viewController">
+                <viewController id="SQf-cx-gKh" customClass="ScanViewController" customModule="ReQRScan" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qMd-ly-ceT"/>
                         <viewControllerLayoutGuide type="bottom" id="g7r-ed-GFc"/>
@@ -63,16 +66,36 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="juM-h6-s5t">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="tTe-5k-MPm"/>
+                                        </constraints>
                                         <items>
-                                            <navigationItem title="Scan" id="9q7-VY-alE"/>
+                                            <navigationItem title="Scan" id="9q7-VY-alE">
+                                                <barButtonItem key="leftBarButtonItem" style="plain" systemItem="stop" id="1i8-Wr-JQd">
+                                                    <color key="tintColor" red="0.12016272668393779" green="0.12016272668393779" blue="0.12016272668393779" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </barButtonItem>
+                                            </navigationItem>
                                         </items>
                                     </navigationBar>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scanned" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qa9-zk-54U">
+                                        <rect key="frame" x="0.0" y="597" width="375" height="70"/>
+                                        <color key="backgroundColor" red="0.1201627267" green="0.1201627267" blue="0.1201627267" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="mrm-gW-oYo"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.082840835492227982" green="0.082840835492227982" blue="0.082840835492227982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.91800922927461137" green="0.91800922927461137" blue="0.91800922927461137" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="juM-h6-s5t" secondAttribute="trailing" id="Feo-rT-rj8"/>
                                     <constraint firstItem="juM-h6-s5t" firstAttribute="top" secondItem="8xP-kb-BWo" secondAttribute="top" id="GdF-Qw-aJq"/>
+                                    <constraint firstAttribute="bottom" secondItem="qa9-zk-54U" secondAttribute="bottom" id="M9q-tr-VDm"/>
+                                    <constraint firstItem="qa9-zk-54U" firstAttribute="leading" secondItem="8xP-kb-BWo" secondAttribute="leading" id="Nq8-5i-ggg"/>
+                                    <constraint firstAttribute="trailing" secondItem="qa9-zk-54U" secondAttribute="trailing" id="lF3-pe-UtG"/>
                                     <constraint firstItem="juM-h6-s5t" firstAttribute="leading" secondItem="8xP-kb-BWo" secondAttribute="leading" id="zcX-oU-i1F"/>
                                 </constraints>
                             </view>
@@ -85,6 +108,12 @@
                             <constraint firstAttribute="trailing" secondItem="8xP-kb-BWo" secondAttribute="trailing" id="upJ-ZH-VwP"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="closeButton" destination="1i8-Wr-JQd" id="Ljh-C3-KBa"/>
+                        <outlet property="enclosedView" destination="8xP-kb-BWo" id="uey-Mt-FKb"/>
+                        <outlet property="scannedLabel" destination="qa9-zk-54U" id="7Rs-ht-aGG"/>
+                        <outlet property="topBar" destination="juM-h6-s5t" id="8ZA-6E-sYx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7gZ-7y-nzL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

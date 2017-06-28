@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -114,9 +115,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jXA-1g-RVS">
-                                <rect key="frame" x="20" y="20" width="39" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jXA-1g-RVS">
+                                <rect key="frame" x="16" y="20" width="39" height="30"/>
                                 <state key="normal" title="Close"/>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="77a-20-caR">
@@ -131,19 +131,22 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JvJ-Xx-Ofa">
-                                <rect key="frame" x="308" y="20" width="57" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JvJ-Xx-Ofa">
+                                <rect key="frame" x="302" y="20" width="57" height="30"/>
                                 <state key="normal" title="Retrieve"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="XWR-vY-Vqs" firstAttribute="top" secondItem="Kpx-N6-PDw" secondAttribute="bottom" constant="23.5" id="1mq-zv-Jz9"/>
+                            <constraint firstItem="JvJ-Xx-Ofa" firstAttribute="top" secondItem="Li6-ff-GEH" secondAttribute="bottom" id="2br-K0-pWj"/>
                             <constraint firstItem="XWR-vY-Vqs" firstAttribute="leading" secondItem="Kpx-N6-PDw" secondAttribute="leading" id="5Of-f5-pp8"/>
                             <constraint firstItem="77a-20-caR" firstAttribute="width" secondItem="Kpx-N6-PDw" secondAttribute="width" id="7LC-KE-7Cw"/>
                             <constraint firstItem="b0O-rp-14s" firstAttribute="leading" secondItem="Kpx-N6-PDw" secondAttribute="leading" id="AT5-pE-Edm"/>
+                            <constraint firstItem="jXA-1g-RVS" firstAttribute="top" secondItem="Li6-ff-GEH" secondAttribute="bottom" id="BzM-oV-7Ke"/>
+                            <constraint firstItem="JvJ-Xx-Ofa" firstAttribute="trailing" secondItem="Qwv-t0-FFb" secondAttribute="trailingMargin" id="DBo-HT-Lig"/>
                             <constraint firstItem="Kpx-N6-PDw" firstAttribute="centerY" secondItem="Qwv-t0-FFb" secondAttribute="centerY" id="SA8-gK-fwX"/>
+                            <constraint firstItem="jXA-1g-RVS" firstAttribute="leading" secondItem="Qwv-t0-FFb" secondAttribute="leadingMargin" id="U8x-9F-dwI"/>
                             <constraint firstItem="Kpx-N6-PDw" firstAttribute="top" secondItem="b0O-rp-14s" secondAttribute="bottom" constant="47.5" id="kiu-PX-9jf"/>
                             <constraint firstItem="Kpx-N6-PDw" firstAttribute="centerX" secondItem="Qwv-t0-FFb" secondAttribute="centerX" id="kpc-y6-xei"/>
                             <constraint firstItem="77a-20-caR" firstAttribute="top" secondItem="XWR-vY-Vqs" secondAttribute="bottom" constant="8" id="ppH-sd-tSS"/>

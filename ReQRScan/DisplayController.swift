@@ -9,7 +9,8 @@
 import UIKit
 import RxSwift
 import RxCocoa
-class DisplayController: UIViewController {
+import ReSwift
+class DisplayController: UIViewController, StoreSubscriber {
     @IBOutlet weak var retrieveButton: UIButton!
     private let disposebag = DisposeBag()
     private var observable: Observable<String?>? = nil
@@ -23,6 +24,12 @@ class DisplayController: UIViewController {
         setUpObservable()
         bind()
     }
+    override func viewDidAppear(_ animated: Bool) {
+        mainStore.subscribe(self)
+    }
+    override func viewDidDisappear(_ animated: Bool) {
+        mainStore.unsubscribe(self)
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -32,11 +39,14 @@ class DisplayController: UIViewController {
         QRString.text = "hello!"
         observable = QRString.rx.text.asObservable()
         observable?.subscribe(onNext: {(input: String?) in
-                self.setUpQR(string: input!)
-            })
+            mainStore.dispatch(
+                CreateQRDisplayString(qrString: input ?? "")
+            )
+        }).addDisposableTo(disposebag)
     }
     private func setUpQR(string: String = "hello!") {
         var qrCode = QRCode(string)
+        self.QRString.text = string
         qrCode?.size = CGSize(width: 1000, height: 1000)
         imageView.image = qrCode?.image
     }
@@ -53,35 +63,20 @@ class DisplayController: UIViewController {
             .subscribe(onNext: {[unowned self] in
                 self.dismiss(animated: true, completion: nil)
             }).addDisposableTo(disposebag)
-        retrieve.rx.tap
-            .subscribe(onNext: {
-               let _ = mockAPI()
-                return
-            })
+        retrieveButton.rx.tap
+            .subscribe(onNext: { [unowned self] in
+                let result = self.mockAPI()
+                mainStore.dispatch(
+                    CreateQRDisplayString(qrString: result.qrString())
+                )
+            }).addDisposableTo(disposebag)
     }
-    private func mockAPI(){
+    private func mockAPI() -> QRInfo{
         sleep(2)
         return QRInfo()
     }
-    class QRInfo{
-        let typeCode: String?
-        let price: String?
-        let companyCode = "0000"
-        let expiryDate : String?
-        let outletCode : String?
-        let others : String?
-        init() {
-            typeCode = "PPP"
-            price = "0100"
-            companyCode = "0000"
-            expiryDate = "170904"
-            outletCode = "TTTT"
-            others = "XXXXXX"
-        }
-        func qrString() -> String {
-            guard let string = (typeCode? + price? + companyCode + expiryDate? + outletCode? + others?) else {return ""}
-            return string
-        }
+    func newState(state: AppState) {
+        setUpQR(string: state.qrDisplayString)
     }
     /*
     // MARK: - Navigation
@@ -93,4 +88,25 @@ class DisplayController: UIViewController {
     }
     */
 
+}
+class QRInfo{
+    let typeCode: String?
+    let price: String?
+    let companyCode : String?
+    let expiryDate : String?
+    let outletCode : String?
+    let others : String?
+    init() {
+        typeCode = "PPP"
+        price = "0100"
+        companyCode = "0000"
+        expiryDate = "170904"
+        outletCode = "TTTT"
+        others = "XXXXXX"
+    }
+    func qrString() -> String {
+        let hello = [typeCode, price, companyCode, expiryDate, outletCode, others] as! [String]
+        let string = hello.flatMap { $0 }.reduce("", {$0 + $1})
+        return string
+    }
 }

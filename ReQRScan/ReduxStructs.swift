@@ -13,6 +13,9 @@ public struct AppState: StateType{
     var qrInfo: QRInfo? = nil
     var scannedString: String? = nil
 }
+public struct FLState: StateType{
+    var isScrolling = false
+}
 //Actions
 struct CreateQRDisplayString: Action {
     var qrString: String

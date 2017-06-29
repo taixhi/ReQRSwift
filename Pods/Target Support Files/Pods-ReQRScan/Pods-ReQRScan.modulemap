@@ -1,0 +1,6 @@
+framework module Pods_ReQRScan {
+  umbrella header "Pods-ReQRScan-umbrella.h"
+
+  export *
+  module * { export * }
+}

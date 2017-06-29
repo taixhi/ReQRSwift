@@ -1,0 +1,6 @@
+framework module Pods_ReQRScanTests {
+  umbrella header "Pods-ReQRScanTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

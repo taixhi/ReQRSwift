@@ -48,10 +48,6 @@ class GifFLController: UITableViewController{
                         (self.tableView.cellForRow(at: indexPath) as? FLTableViewCell)?.animatedView.stopAnimating()
                     }
                 }
-//                for cells in (self.tableView.visibleCells as? [FLTableViewCell])!{
-//                    let cellRect = tableView.rectForRowAtIndexPath(indexPath)
-//                    let completelyVisible = tableView.bounds.contains(cellRect)
-//                }
             }).addDisposableTo(disposeBag)
             // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false

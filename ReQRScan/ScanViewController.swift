@@ -64,6 +64,7 @@ class ScanViewController: UIViewController, AVCaptureMetadataOutputObjectsDelega
         closeButton.rx.tap
             .subscribe(onNext: { [unowned self] in
                 self.dismiss(animated: true, completion: nil)
+                
             }).addDisposableTo(disposebag)
     }
     func captureOutput(_ captureOutput: AVCaptureOutput!, didOutputMetadataObjects metadataObjects: [Any]!, from connection: AVCaptureConnection!) {

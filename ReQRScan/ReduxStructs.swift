@@ -23,6 +23,7 @@ struct CreateQRDisplayString: Action {
 struct StringScanned: Action {
     var string: String
 }
+struct ClearState: Action {}
 //Reducers
 func qrDisplayReducer(action: Action, state: AppState?) -> AppState {
     var state = state ?? AppState()
@@ -31,6 +32,8 @@ func qrDisplayReducer(action: Action, state: AppState?) -> AppState {
         state.qrDisplayString = action.qrString
     case let action as StringScanned:
         state.scannedString = action.string
+    case _ as ClearState:
+        state = AppState()
     default:
         break
     }

@@ -52,8 +52,14 @@ class DisplayController: UIViewController, StoreSubscriber {
     }
     private func bind(){
         let tapGesture = UITapGestureRecognizer()
-        tapGesture.rx.event
+        let qrTap = UITapGestureRecognizer()
+        qrTap.rx.event
             .subscribe(onNext: {tapGesture in
+                UIScreen.main.brightness = 1.0
+            }).addDisposableTo(disposebag)
+        imageView.addGestureRecognizer(qrTap)
+        tapGesture.rx.event
+            .subscribe(onNext: {_ in
                 self.view.endEditing(true)
                 return
             }).addDisposableTo(disposebag)
@@ -105,7 +111,7 @@ class QRInfo{
         others = "XXXXXX"
     }
     func qrString() -> String {
-        let hello = [typeCode, price, companyCode, expiryDate, outletCode, others] as! [String]
+        let hello = [typeCode, price, companyCode, expiryDate, outletCode, ",", others] as! [String]
         let string = hello.flatMap { $0 }.reduce("", {$0 + $1})
         return string
     }
